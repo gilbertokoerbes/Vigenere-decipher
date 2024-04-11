@@ -66,8 +66,8 @@ class Vigenere:
         return reversed_indice_frequencia_letras
 
 
-    def decrypted_text(self,text, shift):
-        C = ord(text) - ord('a')
+    def decrypted_text(self,cipher_letter, shift):
+        C = ord(cipher_letter) - ord('a')
         K = ord(shift) - ord('a')
         P = (C - K + 26) % 26
 
